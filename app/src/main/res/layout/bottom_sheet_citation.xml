@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_card_rounded"
+    android:orientation="vertical"
+    android:padding="@dimen/spacing_xl">
+
+    <!-- Drag Handle -->
+    <View
+        android:layout_width="36dp"
+        android:layout_height="4dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/spacing_md"
+        android:background="@drawable/bg_chip_sample" />
+
+    <!-- Top Badge Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvSheetDocType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_chip_sample"
+            android:fontFamily="sans-serif-bold"
+            android:letterSpacing="0.05"
+            android:paddingHorizontal="@dimen/spacing_sm"
+            android:paddingVertical="@dimen/spacing_2xs"
+            android:text="CONSTITUTION OF KENYA"
+            android:textColor="@color/primary_green"
+            android:textSize="@dimen/text_micro" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/btnCloseSheet"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Close"
+            android:padding="4dp"
+            android:src="@drawable/ic_clear"
+            app:tint="@color/text_tertiary" />
+    </LinearLayout>
+
+    <!-- Citation Title -->
+    <TextView
+        android:id="@+id/tvSheetTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_sm"
+        android:fontFamily="sans-serif-black"
+        android:text="Constitution of Kenya 2010 — Article 38(3)"
+        android:textColor="@color/text_primary"
+        android:textSize="@dimen/text_title" />
+
+    <!-- Citation Legal Reference -->
+    <TextView
+        android:id="@+id/tvSheetCitation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_2xs"
+        android:fontFamily="sans-serif-medium"
+        android:text="CoK 2010, Art. 38(3)(a) • Laws of Kenya"
+        android:textColor="@color/primary_green"
+        android:textSize="@dimen/text_caption" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginVertical="@dimen/spacing_md"
+        android:background="@color/divider_line" />
+
+    <!-- Unedited Statutory Excerpt -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-bold"
+        android:letterSpacing="0.08"
+        android:text="OFFICIAL STATUTORY EXTRACT"
+        android:textColor="@color/text_tertiary"
+        android:textSize="@dimen/text_micro" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_xs"
+        app:cardBackgroundColor="@color/surface_variant"
+        app:cardCornerRadius="@dimen/radius_md"
+        app:cardElevation="0dp"
+        app:strokeColor="@color/divider_line"
+        app:strokeWidth="1dp">
+
+        <TextView
+            android:id="@+id/tvSheetExtract"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:lineSpacingExtra="4sp"
+            android:padding="@dimen/spacing_md"
+            android:text="“Every adult citizen has the right, without unreasonable restrictions, to be registered as a voter; to vote by secret ballot in any election or referendum; and to be a candidate for public office.”"
+            android:textColor="@color/text_primary"
+            android:textSize="@dimen/text_body" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Source Origin Note -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_md"
+        android:fontFamily="sans-serif"
+        android:lineSpacingExtra="2sp"
+        android:text="Source: Kenya Law Reports (eKLR) / National Council for Law Reporting. Certified official text."
+        android:textColor="@color/text_tertiary"
+        android:textSize="@dimen/text_micro" />
+
+    <!-- Action Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_lg"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCopyCitation"
+            style="@style/Widget.HakiCheck.Button.Outlined"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/button_height"
+            android:layout_weight="1"
+            android:text="Copy Extract"
+            app:icon="@drawable/ic_copy" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnDismissSheet"
+            style="@style/Widget.HakiCheck.Button.Primary"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginStart="@dimen/spacing_md"
+            android:layout_weight="1"
+            android:text="Done" />
+
+    </LinearLayout>
+
+</LinearLayout>

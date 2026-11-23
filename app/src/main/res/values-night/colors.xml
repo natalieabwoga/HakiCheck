@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand Identity (Dark Mode Adjusted) -->
+    <color name="primary_green">#16A34A</color>
+    <color name="primary_green_dark">#0F5132</color>
+    <color name="primary_green_light">#22C55E</color>
+    <color name="primary_green_container">#14532D</color>
+    <color name="on_primary_green_container">#DCFCE7</color>
+
+    <color name="kenya_red">#EF4444</color>
+    <color name="kenya_red_light">#F87171</color>
+    <color name="kenya_red_container">#7F1D1D</color>
+    <color name="on_kenya_red_container">#FEE2E2</color>
+
+    <color name="kenya_black">#020617</color>
+    <color name="kenya_gold">#F59E0B</color>
+    <color name="kenya_gold_container">#78350F</color>
+    <color name="on_kenya_gold_container">#FEF3C7</color>
+
+    <!-- 5-Tier Fact-Checking Verdict Semantic Palette (Dark Mode) -->
+    <!-- 1. Verified True -->
+    <color name="verdict_true">#22C55E</color>
+    <color name="verdict_true_bg">#14532D</color>
+    <color name="verdict_true_border">#16A34A</color>
+    <color name="verdict_true_text">#DCFCE7</color>
+
+    <!-- 2. Mostly True -->
+    <color name="verdict_mostly_true">#14B8A6</color>
+    <color name="verdict_mostly_true_bg">#134E4A</color>
+    <color name="verdict_mostly_true_border">#0D9488</color>
+    <color name="verdict_mostly_true_text">#CCFBF1</color>
+
+    <!-- 3. Misleading / Exaggerated -->
+    <color name="verdict_misleading">#F59E0B</color>
+    <color name="verdict_misleading_bg">#78350F</color>
+    <color name="verdict_misleading_border">#D97706</color>
+    <color name="verdict_misleading_text">#FEF3C7</color>
+
+    <!-- 4. Verified False -->
+    <color name="verdict_false">#EF4444</color>
+    <color name="verdict_false_bg">#450A0A</color>
+    <color name="verdict_false_border">#B91C1C</color>
+    <color name="verdict_false_text">#FEE2E2</color>
+
+    <!-- 5. Unverified / Insufficient Evidence -->
+    <color name="verdict_unverified">#94A3B8</color>
+    <color name="verdict_unverified_bg">#1E293B</color>
+    <color name="verdict_unverified_border">#475569</color>
+    <color name="verdict_unverified_text">#E2E8F0</color>
+
+    <!-- UI Surface Tokens (Dark Mode) -->
+    <color name="window_background">#090D0B</color>
+    <color name="surface_card">#121815</color>
+    <color name="surface_card_stroke">#1E2A24</color>
+    <color name="surface_variant">#16201B</color>
+    <color name="surface_subtle">#0D1310</color>
+    <color name="divider_line">#1E2A24</color>
+
+    <!-- Typography Tokens (Dark Mode) -->
+    <color name="text_primary">#F8FAFC</color>
+    <color name="text_secondary">#94A3B8</color>
+    <color name="text_tertiary">#64748B</color>
+    <color name="text_white">#FFFFFF</color>
+
+    <!-- Navigation & App Bar (Dark Mode) -->
+    <color name="appbar_background">#090D0B</color>
+    <color name="bottom_nav_bg">#121815</color>
+    <color name="bottom_nav_selected">#22C55E</color>
+    <color name="bottom_nav_unselected">#64748B</color>
+
+    <!-- General Utility -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="shimmer_color">#1E293B</color>
+</resources>

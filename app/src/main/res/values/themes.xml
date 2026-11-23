@@ -1,0 +1,82 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme -->
+    <style name="Theme.HakiCheck" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Brand Colors -->
+        <item name="colorPrimary">@color/primary_green</item>
+        <item name="colorPrimaryVariant">@color/primary_green_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/kenya_red</item>
+        <item name="colorSecondaryVariant">@color/kenya_gold</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <!-- Surfaces & Backgrounds -->
+        <item name="android:windowBackground">@color/window_background</item>
+        <item name="colorSurface">@color/surface_card</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="colorSurfaceVariant">@color/surface_variant</item>
+        <item name="colorOnSurfaceVariant">@color/text_secondary</item>
+
+        <!-- System Bars -->
+        <item name="android:statusBarColor">@color/window_background</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:navigationBarColor">@color/bottom_nav_bg</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">true</item>
+
+        <!-- Components Default Styles -->
+        <item name="materialButtonStyle">@style/Widget.HakiCheck.Button.Primary</item>
+        <item name="bottomNavigationStyle">@style/Widget.HakiCheck.BottomNavigationView</item>
+    </style>
+
+    <!-- Primary Button -->
+    <style name="Widget.HakiCheck.Button.Primary" parent="Widget.Material3.Button">
+        <item name="android:backgroundTint">@color/primary_green</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="cornerRadius">@dimen/radius_md</item>
+        <item name="android:minHeight">@dimen/button_height</item>
+        <item name="elevation">0dp</item>
+        <item name="iconTint">@color/white</item>
+    </style>
+
+    <!-- Outlined Button -->
+    <style name="Widget.HakiCheck.Button.Outlined" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:textColor">@color/primary_green</item>
+        <item name="strokeColor">@color/primary_green</item>
+        <item name="strokeWidth">1.5dp</item>
+        <item name="cornerRadius">@dimen/radius_md</item>
+        <item name="android:minHeight">@dimen/button_height</item>
+        <item name="iconTint">@color/primary_green</item>
+    </style>
+
+    <!-- Bottom Navigation View -->
+    <style name="Widget.HakiCheck.BottomNavigationView" parent="Widget.Material3.BottomNavigationView">
+        <item name="android:background">@color/bottom_nav_bg</item>
+        <item name="itemIconTint">@color/selector_nav_item</item>
+        <item name="itemTextColor">@color/selector_nav_item</item>
+        <item name="itemActiveIndicatorStyle">@style/Widget.HakiCheck.BottomNav.Indicator</item>
+        <item name="labelVisibilityMode">labeled</item>
+        <item name="elevation">8dp</item>
+    </style>
+
+    <style name="Widget.HakiCheck.BottomNav.Indicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@color/primary_green_container</item>
+    </style>
+
+    <!-- Material Card Clean Flat Style -->
+    <style name="Widget.HakiCheck.Card" parent="Widget.Material3.CardView.Outlined">
+        <item name="cardBackgroundColor">@color/surface_card</item>
+        <item name="strokeColor">@color/surface_card_stroke</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="cardCornerRadius">@dimen/radius_lg</item>
+        <item name="cardElevation">0dp</item>
+    </style>
+
+    <!-- Toolbar / App Header -->
+    <style name="Widget.HakiCheck.Toolbar" parent="Widget.Material3.Toolbar">
+        <item name="android:background">@color/appbar_background</item>
+        <item name="titleTextColor">@color/text_primary</item>
+        <item name="subtitleTextColor">@color/text_secondary</item>
+        <item name="navigationIconTint">@color/text_primary</item>
+    </style>
+</resources>

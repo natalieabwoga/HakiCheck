@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Application Identity -->
+    <string name="app_name">HakiCheck</string>
+    <string name="app_tagline">AI Civic Assistant</string>
+    <string name="app_kicker">KENYA CIVIC FACT-CHECKING</string>
+    <string name="app_description">Empowering Kenyan citizens with AI-grounded verification and authentic constitutional facts ahead of the 2027 General Elections.</string>
+
+    <!-- Bottom Navigation Tabs -->
+    <string name="nav_verify">Verify</string>
+    <string name="nav_knowledge">Civic Hub</string>
+    <string name="nav_trending">Trending</string>
+    <string name="nav_saved">Saved</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- Verify Screen -->
+    <string name="verify_title">Check a Civic Claim</string>
+    <string name="verify_subtitle">Cross-reference social media claims against the Kenyan Constitution, IEBC gazettes, and statutory election records.</string>
+    <string name="verify_input_hint">Paste or type a claim, quote, or viral WhatsApp message…</string>
+    <string name="verify_input_helper">Text claims only • 10 to 600 characters</string>
+    <string name="verify_btn_action">Verify Claim</string>
+    <string name="verify_btn_verifying">Verifying against legal records…</string>
+    <string name="verify_clear_text">Clear text</string>
+    <string name="verify_sample_header">QUICK SAMPLES</string>
+    <string name="verify_error_short">Please enter at least 10 characters to verify.</string>
+    <string name="verify_error_empty">Please enter or paste a claim first.</string>
+
+    <!-- Verdict Labels (5-Tier Fact-Checking Taxonomy) -->
+    <string name="verdict_false">VERIFIED FALSE</string>
+    <string name="verdict_true">VERIFIED TRUE</string>
+    <string name="verdict_mostly_true">MOSTLY TRUE</string>
+    <string name="verdict_misleading">MISLEADING</string>
+    <string name="verdict_unverified">UNVERIFIED / INSUFFICIENT DATA</string>
+    <string name="verdict_civic_info">CIVIC INFORMATION</string>
+
+    <!-- Verdict Descriptions -->
+    <string name="verdict_desc_false">The claim directly contradicts established constitutional provisions or official statutory records.</string>
+    <string name="verdict_desc_true">The claim is completely substantiated by authoritative Kenyan legal and civic records.</string>
+    <string name="verdict_desc_mostly_true">The core claim is accurate, though minor context or nuances are missing.</string>
+    <string name="verdict_desc_misleading">The claim contains elements of truth but conveys a distorted, exaggerated, or false impression.</string>
+    <string name="verdict_desc_unverified">Current Kenyan constitutional and electoral archives do not contain enough verified evidence to substantiate or refute this claim.</string>
+    <string name="verdict_desc_civic_info">Authoritative civic guidance and answers directly retrieved from Kenyan constitutional and statutory records.</string>
+
+    <!-- Verification Result Screen -->
+    <string name="result_title">Verification Verdict</string>
+    <string name="result_analyzed_claim">ANALYZED CLAIM</string>
+    <string name="result_summary_header">HakiCheck AI Grounded Summary</string>
+    <string name="result_evidence_header">Evidence Trail</string>
+    <string name="result_evidence_count">%1$d legal extracts retrieved</string>
+    <string name="result_confidence">Confidence: %1$d%% • Grounded in %2$s</string>
+    <string name="result_checked_time">Verified on %1$s</string>
+    <string name="result_action_share">Share Verdict</string>
+    <string name="result_action_save">Save</string>
+    <string name="result_action_saved">Saved to History</string>
+    <string name="result_action_copy">Copy Summary</string>
+    <string name="result_copied_toast">Verification summary copied to clipboard.</string>
+    <string name="result_disclaimer">Notice: HakiCheck synthesizes citations directly from Kenyan legal statutes. It does not replace official legal counsel or formal IEBC determinations.</string>
+
+    <!-- Civic Knowledge Hub -->
+    <string name="knowledge_header">Civic Knowledge Hub</string>
+    <string name="knowledge_subtitle">Essential constitutional rights, electoral rules, and citizen guides explained in plain Kenyan terms.</string>
+    <string name="knowledge_featured_badge">5 MIN ESSENTIAL GUIDE</string>
+    <string name="knowledge_featured_title">Your Constitutional Right to Vote</string>
+    <string name="knowledge_featured_desc">Master the legal protections under Article 38 of the Constitution: registration, secret ballot, and non-discrimination.</string>
+    <string name="knowledge_featured_cta">Start Learning →</string>
+    <string name="knowledge_categories_header">EXPLORE CIVIC TOPICS</string>
+
+    <!-- Trending Claims Screen -->
+    <string name="trending_header">Trending Public Claims</string>
+    <string name="trending_subtitle">Viral claims debunked or confirmed by civic researchers across Kenyan digital communities.</string>
+    <string name="trending_filter_all">All Claims</string>
+    <string name="trending_filter_elections">Elections &amp; IEBC</string>
+    <string name="trending_filter_rights">Bill of Rights</string>
+    <string name="trending_filter_fees">Fees &amp; Taxes</string>
+
+    <!-- Saved History Screen -->
+    <string name="saved_header">Saved &amp; History</string>
+    <string name="saved_subtitle">Your previously verified claims and saved legal references for offline review.</string>
+    <string name="saved_empty_title">No Saved Claims Yet</string>
+    <string name="saved_empty_desc">When you verify claims, tap the bookmark icon to save them here for quick offline access.</string>
+    <string name="saved_clear_all">Clear History</string>
+    <string name="saved_clear_confirm">Are you sure you want to clear your saved claims?</string>
+    <string name="saved_clear_yes">Clear</string>
+    <string name="saved_clear_cancel">Cancel</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_header">Settings &amp; Preferences</string>
+    <string name="settings_subtitle">Customize offline verification, display mode, and privacy permissions.</string>
+    <string name="settings_section_profile">Citizen Profile</string>
+    <string name="settings_name_label">Citizen Name</string>
+    <string name="settings_name_hint">e.g. John Doe</string>
+    <string name="settings_county_label">Registered / Home County</string>
+    <string name="settings_save_profile">Save Profile</string>
+    <string name="settings_profile_saved">Profile updated successfully.</string>
+
+    <string name="settings_section_app">Appearance</string>
+    <string name="settings_dark_mode_title">Dark Appearance</string>
+    <string name="settings_dark_mode_desc">Use a comfortable low-light obsidian theme.</string>
+
+    <string name="settings_section_ai">Verification Engine</string>
+    <string name="settings_offline_mode_title">Offline Demonstration Mode</string>
+    <string name="settings_offline_mode_desc">Use the local verified Kenyan civic corpus. Allows instant fact-checking even without an active internet connection.</string>
+
+    <string name="settings_section_ethics">Civic Research Ethics &amp; Privacy</string>
+    <string name="settings_consent_title">Anonymous Research Telemetry</string>
+    <string name="settings_consent_desc">Allow anonymized query patterns to be included in public civic verification research. No personal identifiers are ever tracked.</string>
+    <string name="settings_terms_title">Terms of Service &amp; Ethics Policy</string>
+    <string name="settings_terms_desc">Review informed consent, data minimization, and constitutional non-partisanship principles.</string>
+
+    <string name="settings_section_about">About HakiCheck</string>
+    <string name="settings_about_app_name">HakiCheck Kenya</string>
+    <string name="settings_about_tagline">Kenya\'s Sovereign AI Civic Verification Platform</string>
+    <string name="settings_about_legal_basis">Grounded on the Constitution of Kenya 2010 and official statutory archives.</string>
+    <string name="settings_about_version">Version 1.0.0 (Production Release)</string>
+
+    <!-- Arrays -->
+    <string-array name="kenya_counties">
+        <item>01 - Mombasa</item>
+        <item>02 - Kwale</item>
+        <item>03 - Kilifi</item>
+        <item>04 - Tana River</item>
+        <item>05 - Lamu</item>
+        <item>06 - Taita Taveta</item>
+        <item>07 - Garissa</item>
+        <item>08 - Wajir</item>
+        <item>09 - Mandera</item>
+        <item>10 - Marsabit</item>
+        <item>11 - Isiolo</item>
+        <item>12 - Meru</item>
+        <item>13 - Tharaka-Nithi</item>
+        <item>14 - Embu</item>
+        <item>15 - Kitui</item>
+        <item>16 - Machakos</item>
+        <item>17 - Makueni</item>
+        <item>18 - Nyandarua</item>
+        <item>19 - Nyeri</item>
+        <item>20 - Kirinyaga</item>
+        <item>21 - Murang\'a</item>
+        <item>22 - Kiambu</item>
+        <item>23 - Turkana</item>
+        <item>24 - West Pokot</item>
+        <item>25 - Samburu</item>
+        <item>26 - Trans Nzoia</item>
+        <item>27 - Uasin Gishu</item>
+        <item>28 - Elgeyo Marakwet</item>
+        <item>29 - Nandi</item>
+        <item>30 - Baringo</item>
+        <item>31 - Laikipia</item>
+        <item>32 - Nakuru</item>
+        <item>33 - Narok</item>
+        <item>34 - Kajiado</item>
+        <item>35 - Kericho</item>
+        <item>36 - Bomet</item>
+        <item>37 - Kakamega</item>
+        <item>38 - Vihiga</item>
+        <item>39 - Bungoma</item>
+        <item>40 - Busia</item>
+        <item>41 - Siaya</item>
+        <item>42 - Kisumu</item>
+        <item>43 - Homa Bay</item>
+        <item>44 - Migori</item>
+        <item>45 - Kisii</item>
+        <item>46 - Nyamira</item>
+        <item>47 - Nairobi City</item>
+    </string-array>
+
+    <string-array name="languages">
+        <item>English (Official)</item>
+        <item>Kiswahili (Taifa)</item>
+        <item>Sheng (Colloquial Youth Adaptation)</item>
+    </string-array>
+</resources>

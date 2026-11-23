@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/window_background">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/appbar_background"
+        app:elevation="1dp">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/authToolbar"
+            style="@style/Widget.HakiCheck.Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:navigationIcon="@drawable/ic_arrow_back"
+            app:title="Citizen Account" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/spacing_lg"
+            android:paddingTop="@dimen/spacing_md"
+            android:paddingBottom="@dimen/spacing_3xl">
+
+            <!-- Brand Logo (Moved lower down and enlarged) -->
+            <ImageView
+                android:layout_width="220dp"
+                android:layout_height="75dp"
+                android:layout_marginTop="28dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitCenter"
+                android:src="@drawable/hakicheck_logo" />
+
+            <TextView
+                android:id="@+id/tvAuthHeaderSubtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_xs"
+                android:fontFamily="sans-serif-medium"
+                android:text="Save verified claims and personalize your civic feed"
+                android:textColor="@color/text_secondary"
+                android:textSize="@dimen/text_caption" />
+
+            <!-- Auth Form Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_lg"
+                app:cardBackgroundColor="@color/surface_card"
+                app:cardCornerRadius="@dimen/radius_xl"
+                app:cardElevation="0dp"
+                app:strokeColor="@color/surface_card_stroke"
+                app:strokeWidth="1.5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/spacing_xl">
+
+                    <!-- Tab Switcher (Sign In vs Sign Up) -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp"
+                        android:background="@drawable/bg_chip_sample"
+                        android:orientation="horizontal"
+                        android:padding="3dp">
+
+                        <TextView
+                            android:id="@+id/tabSignIn"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_chip_selected"
+                            android:fontFamily="sans-serif-bold"
+                            android:gravity="center"
+                            android:text="Sign In"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_body_small" />
+
+                        <TextView
+                            android:id="@+id/tabSignUp"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:fontFamily="sans-serif-bold"
+                            android:gravity="center"
+                            android:text="Create Account"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="@dimen/text_body_small" />
+                    </LinearLayout>
+
+                    <!-- Name Input (Sign Up Only) -->
+                    <LinearLayout
+                        android:id="@+id/layoutNameInput"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_lg"
+                        android:orientation="vertical"
+                        android:visibility="gone"
+                        tools:visibility="visible">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-bold"
+                            android:letterSpacing="0.04"
+                            android:text="FULL NAME"
+                            android:textColor="@color/text_tertiary"
+                            android:textSize="@dimen/text_micro" />
+
+                        <EditText
+                            android:id="@+id/etAuthName"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_marginTop="@dimen/spacing_xs"
+                            android:background="@drawable/bg_input_box"
+                            android:fontFamily="sans-serif"
+                            android:hint="e.g. John Doe"
+                            android:importantForAutofill="no"
+                            android:inputType="textPersonName"
+                            android:paddingHorizontal="@dimen/spacing_md"
+                            android:textColor="@color/text_primary"
+                            android:textColorHint="@color/text_tertiary"
+                            android:textSize="@dimen/text_body" />
+                    </LinearLayout>
+
+                    <!-- Email Input -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_md"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-bold"
+                            android:letterSpacing="0.04"
+                            android:text="EMAIL OR PHONE"
+                            android:textColor="@color/text_tertiary"
+                            android:textSize="@dimen/text_micro" />
+
+                        <EditText
+                            android:id="@+id/etAuthEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_marginTop="@dimen/spacing_xs"
+                            android:background="@drawable/bg_input_box"
+                            android:fontFamily="sans-serif"
+                            android:hint="e.g. john.doe@example.com"
+                            android:importantForAutofill="no"
+                            android:inputType="textEmailAddress"
+                            android:paddingHorizontal="@dimen/spacing_md"
+                            android:textColor="@color/text_primary"
+                            android:textColorHint="@color/text_tertiary"
+                            android:textSize="@dimen/text_body" />
+                    </LinearLayout>
+
+                    <!-- County Dropdown (Sign Up Only) -->
+                    <LinearLayout
+                        android:id="@+id/layoutCountyInput"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_md"
+                        android:orientation="vertical"
+                        android:visibility="gone"
+                        tools:visibility="visible">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-bold"
+                            android:letterSpacing="0.04"
+                            android:text="VOTING COUNTY"
+                            android:textColor="@color/text_tertiary"
+                            android:textSize="@dimen/text_micro" />
+
+                        <Spinner
+                            android:id="@+id/spinnerAuthCounty"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_marginTop="@dimen/spacing_xs"
+                            android:background="@drawable/bg_input_box"
+                            android:paddingHorizontal="@dimen/spacing_md" />
+                    </LinearLayout>
+
+                    <!-- Password Input with Eye Visibility Toggle -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_md"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-bold"
+                            android:letterSpacing="0.04"
+                            android:text="PASSWORD"
+                            android:textColor="@color/text_tertiary"
+                            android:textSize="@dimen/text_micro" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/tilAuthPassword"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/spacing_xs"
+                            app:boxCornerRadiusBottomEnd="@dimen/radius_md"
+                            app:boxCornerRadiusBottomStart="@dimen/radius_md"
+                            app:boxCornerRadiusTopEnd="@dimen/radius_md"
+                            app:boxCornerRadiusTopStart="@dimen/radius_md"
+                            app:boxStrokeColor="@color/surface_card_stroke"
+                            app:hintEnabled="false"
+                            app:passwordToggleEnabled="true"
+                            app:passwordToggleTint="@color/text_tertiary">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/etAuthPassword"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:background="@drawable/bg_input_box"
+                                android:fontFamily="sans-serif"
+                                android:hint="••••••••"
+                                android:importantForAutofill="no"
+                                android:inputType="textPassword"
+                                android:paddingHorizontal="@dimen/spacing_md"
+                                android:textColor="@color/text_primary"
+                                android:textColorHint="@color/text_tertiary"
+                                android:textSize="@dimen/text_body" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+
+                    <!-- Research Ethics & Data Tracking Permissions (Sign Up Only) -->
+                    <LinearLayout
+                        android:id="@+id/layoutAuthEthics"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_md"
+                        android:orientation="vertical"
+                        android:visibility="gone"
+                        tools:visibility="visible">
+
+                        <com.google.android.material.checkbox.MaterialCheckBox
+                            android:id="@+id/cbAuthResearchConsent"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:fontFamily="sans-serif"
+                            android:text="Allow anonymous query telemetry for civic research &amp; accuracy improvement"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="@dimen/text_caption"
+                            app:buttonTint="@color/primary_green" />
+
+                        <TextView
+                            android:id="@+id/tvAuthTermsLink"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="32dp"
+                            android:background="?attr/selectableItemBackground"
+                            android:fontFamily="sans-serif-medium"
+                            android:paddingVertical="4dp"
+                            android:text="View Terms of Service &amp; Civic Ethics Policy"
+                            android:textColor="@color/primary_green"
+                            android:textSize="@dimen/text_micro" />
+                    </LinearLayout>
+
+                    <!-- Submit Button -->
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnSubmitAuth"
+                        style="@style/Widget.HakiCheck.Button.Primary"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="@dimen/spacing_xl"
+                        android:text="Sign In"
+                        android:textSize="16sp" />
+
+                    <!-- Toggle Mode Link -->
+                    <TextView
+                        android:id="@+id/tvToggleMode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/spacing_md"
+                        android:background="?attr/selectableItemBackground"
+                        android:fontFamily="sans-serif-medium"
+                        android:padding="8dp"
+                        android:text="Don't have an account? Sign Up"
+                        android:textColor="@color/primary_green"
+                        android:textSize="@dimen/text_caption" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Continue as Guest -->
+            <TextView
+                android:id="@+id/btnContinueGuest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_xl"
+                android:background="?attr/selectableItemBackground"
+                android:fontFamily="sans-serif"
+                android:padding="8dp"
+                android:text="Continue as Guest  →"
+                android:textColor="@color/text_tertiary"
+                android:textSize="@dimen/text_caption" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

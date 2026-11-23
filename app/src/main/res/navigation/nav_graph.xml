@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navigation_verify">
+
+    <fragment
+        android:id="@+id/navigation_verify"
+        android:name="ke.co.hakicheck.presentation.ui.verify.VerifyFragment"
+        android:label="@string/nav_verify"
+        tools:layout="@layout/fragment_verify" />
+
+    <fragment
+        android:id="@+id/navigation_knowledge"
+        android:name="ke.co.hakicheck.presentation.ui.knowledge.CivicKnowledgeFragment"
+        android:label="@string/nav_knowledge"
+        tools:layout="@layout/fragment_civic_knowledge" />
+
+    <fragment
+        android:id="@+id/navigation_trending"
+        android:name="ke.co.hakicheck.presentation.ui.trending.TrendingClaimsFragment"
+        android:label="@string/nav_trending"
+        tools:layout="@layout/fragment_trending_claims" />
+
+    <fragment
+        android:id="@+id/navigation_saved"
+        android:name="ke.co.hakicheck.presentation.ui.saved.SavedHistoryFragment"
+        android:label="@string/nav_saved"
+        tools:layout="@layout/fragment_saved_history" />
+
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="ke.co.hakicheck.presentation.ui.settings.SettingsFragment"
+        android:label="@string/nav_settings"
+        tools:layout="@layout/fragment_settings" />
+
+</navigation>
