@@ -17,7 +17,7 @@
 <p align="center">
   <img src="docs/screenshots/verify_claim.png" width="210" alt="Check a Civic Claim" />
   &nbsp;
-  <img src="docs/screenshots/verdict_misleading.png" width="210" alt="Verification Verdict - Misleading" />
+  <img src="docs/screenshots/verdict_misleading_v2.png" width="210" alt="Verification Verdict - Misleading" />
   &nbsp;
   <img src="docs/screenshots/verdict_diaspora.png" width="210" alt="Verification Verdict - Diaspora" />
   &nbsp;
