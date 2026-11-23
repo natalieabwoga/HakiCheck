@@ -1,0 +1,28 @@
+THE ELECTIONS ACT, NO. 24 OF 2011
+LAWS OF KENYA (CAP. 7)
+
+PART II — REGISTRATION OF VOTERS
+
+Section 5. Continuous registration of voters
+(1) The Commission shall continuously register citizens who are eligible as voters at all gazetted registration centres without imposing any fee, charge or monetary condition.
+(2) Registration of voters under this section shall be suspended for ninety days prior to the date of a general election.
+(3) A citizen of Kenya who has attained the age of eighteen years and holds a valid national identity card or valid Kenyan passport shall be entitled to be registered as a voter.
+
+PART VI — ELECTION PROCESS
+
+Section 10. Voting procedure
+(1) Voting at every election shall be by secret ballot.
+(2) Every voter shall cast their vote by marking an official security-printed paper ballot issued by the presiding officer and depositing the ballot in the designated sealed ballot box.
+
+Section 22. Qualifications for nomination of candidates
+(1) A person may be nominated as a candidate for an election under this Act only if that person—
+(a) is qualified to be elected to that office under the Constitution and this Act; and
+(b) holds a certificate or qualification as follows:
+(i) For President and Deputy President: a degree from a university recognized in Kenya.
+(ii) For Governor and Deputy Governor: a degree from a university recognized in Kenya.
+[Note: The requirement for a degree qualification for Member of County Assembly was struck down and declared unconstitutional by the High Court in Petition No. E229 of 2022].
+
+Section 44. Integrated electronic electoral system
+(1) The Commission shall establish an integrated electronic electoral system that includes biometric voter registration, biometric voter identification, and electronic transmission of election results.
+(2) The Kenya Integrated Elections Management System (KIEMS) shall be deployed to identify voters biometrically at the entrance of the polling station and transmit digital scanned images of official result forms (Form 34A) from polling stations to the constituency and national tallying centres.
+(3) The electronic electoral system shall not replace physical paper ballots; voting shall remain physical on marked paper ballots deposited in sealed ballot boxes.

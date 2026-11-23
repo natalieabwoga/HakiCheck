@@ -1,0 +1,10 @@
+{
+  "description": "Helps young Kenyan voters verify political claims in English, Swahili, or Sheng with clear explanations grounded in legal and civic sources.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
